@@ -1,1 +1,4 @@
+jdk: openjdk8
 language: java
+script:
+- "./gradlew install -Dscan -Dscan.uploadInBackground=false --daemon"
